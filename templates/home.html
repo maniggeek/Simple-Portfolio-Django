@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block content %}
+<div class="main__container">
+  <div class="item__ navbar__ navbar__modify">
+   <h2><a class='navbar__item brand__ brand__modify'href="">WELLCOME</a></h2>
+   <h2><a class='navbar__item name__ name__modify'href="#">Mani Izadi Portfolio</a></h2>
+  </div>
+
+  <div  class=" item__ about__ about__modify">
+
+       <h1 class='about__item about__head'>In nutshell</h1>
+       <p class='about__item about__description'>
+           Computer is being my best buddy since I was a nerd at elementary school.
+        My first coding project came up in summer 2017 - pretty responsive website.
+          From that day began my Web Design journey that still continues. Over 5 years I have gained a lot of experience,
+        run some projects and also obtained a master's degree. I love simple clean designs and gentle use of coding.
+       </p>
+       <div class="skill__">WEBDESIGN</div>
+       <div class="skill__">UI/UX</div>
+       <div class="skill__">Django</div>
+       <div class="skill__">Js</div>
+       <div class="skill__">Bootstrap</div>
+       <div class="skill__">Jquerry</div>
+       <div class="skill__">SQL</div>
+       <div class="skill__">Git</div>
+  </div>
+
+  <div class="item__ project__ project__modify">
+
+    <div class="project__pics 'hover-zoom'">
+      <div style="background-image:url('{%  static 'media/img/one.jpg' %}');" class="pro__item"></div>
+      <div style="background-image:url('{% static 'media/img/two.jpg' %}');" class="pro__item"></div>
+      <div style="background-image:url('{% static 'media/img/three.jpg' %}');"class="pro__item"></div>
+    </div>
+    <div class="project__pics">
+      <div style="background-image:url('{% static 'media/img/four.jpg' %}');" class="pro__item"></div>
+      <div style="background-image:url('{% static 'media/img/five.jpg' %}');"class="pro__item"></div>
+      <div style="background-image:url('{% static 'media/img/six.jpg' %}');"class="pro__item"></div>
+    </div>
+    <div class="project__pics">
+      <div style="background-image:url('{% static 'media/img/seven.jpg' %}');"class="pro__item"></div>
+      <div style="background-image:url('{% static 'media/img/eight.jpg' %}');" class="pro__item"></div>
+      <div style="background-image:url('{% static 'media/img/nine.jpg' %}');"class="pro__item"></div>
+    </div>
+  </div>
+  <div class='item__ footer__ footer__modify'><span class='copyright__'>MANIIZADI</span>
+   <div class="social_media_icons">
+      <span>Contact :</span>
+      <a href="index.html">manigeek@gmail.com</a>
+   </div>
+  </div>
+</div>
+{% endblock content %}
